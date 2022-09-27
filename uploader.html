@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+    <style>
+        
+        body {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            -webkit-box-align: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .uploadcare--widget__button.uploadcare--widget__button_type_open {
+            background-color: #FFC117;
+            border-radius: 9px;
+            cursor: pointer;
+            padding: 10px 20px;
+        }
+
+        .uploader-button {
+            line-height: 20px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .uploader-button > :hover {
+            box-shadow: 0 0 #0000,0 0 #0000,0 6px 12px -3px rgba(48, 58, 74, 0.1);
+        }
+    </style>
+    <script>
+        UPLOADCARE_LOCALE = "de"
+    </script>
+</head>
+<body>
+    <div class="uploader-button">
+        <input
+        type="hidden"
+        role="uploadcare-uploader"
+        data-public-key="2f66c534da0917c0f8f4"
+        data-multiple="true"
+        data-images-only="true"
+        data-multiple-max="100"
+        data-preview-step="true"
+        data-image-shrink="2560x1560px 95%"
+        data-tabs="file camera gdrive gphotos dropbox onedrive box"
+        />
+    </div>
+</body>
+ 
+</html>
